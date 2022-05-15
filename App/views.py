@@ -517,7 +517,7 @@ def rec(request, recpage):
 def saisieOccasion(request, pageNbr):
     marque = request.GET.get("marque")
     modele = request.GET.get("model").replace(" ", "-").lower()
-    ville = request.GET.get("ville")
+    ville = request.GET.get("ville").replace(" ", "_").lower()
     regdate_min = request.GET.get("datemin")
     regdate_max = request.GET.get("datemax")
     mielage_min = request.GET.get("kmin")
@@ -959,7 +959,10 @@ def comparaison(request):
     min_sites = min(min_moteur, min_avito)
     best_price = [min_sites[0]]
     liste_comparaison = moteur + avito
-    b = min(liste_comparaison)
+    try:
+        b = min(liste_comparaison)
+    except:
+        b = (1000000000000, "#")
     lien_min_site = b[1]
 
 
