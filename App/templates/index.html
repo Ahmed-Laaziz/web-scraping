@@ -1,0 +1,1638 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HVAC | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/font-awesome.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/elegant-icons.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/nice-select.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/magnific-popup.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/jquery-ui.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/slicknav.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/style.css" %} type="text/css">
+    
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="searcch-switch"><i class="fa fa-search"></i></a>
+            <a href="statistics.html" class="primary-btn">Statistiques</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src={% static "img/logo.png" %} alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>(+12) 345 678 910</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+12) 345 678 910</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src={% static "img/logo.png" %} alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="/index.html">Accueil</a></li>
+                                <li><a href="{% url 'marquepage' 'Dacia' %}">Neuf</a></li>
+                                <!-- <li><a href="#">Occasion</a></li> -->
+                                <li><a href="{% url 'blogpages' 1 %}">Occasion</a></li>
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="car-details.html">Car Details</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="1/2/3/4/5/statistics.html" class="primary-btn">Statistiques</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+
+    <!-- Hero Section Begin -->
+    <section class="hero spad set-bg" data-setbg={% static "img/hero-bg.jpg" %}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero__text">
+                        <div class="hero__text__title">
+                            <span style="font-size: 27px;">DES VEHICULES A DECOUVRIR PARTOUT AU MAROC</span> 
+                            
+                        </div>
+                        <!-- div class="hero__text__price">
+                            <div class="car-model">Model 2019</div>
+                            <h2>$399<span>/Month</span></h2>
+                        </div>< -->
+                        <a href="{% url 'marquepage' 'Dacia' %}" class="primary-btn"><img src={% static "img/wheel.png" %} alt=""> Neuf</a>
+                        <a href="{% url 'blogpages' 1 %}" class="primary-btn more-btn">Occasion</a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero__tab">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Neuf</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Occasion</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Comparaison</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                <div class="hero__tab__form">
+                                    <h2>Trouver une voiture Neuve</h2>
+                                    <form action="./saisie.html" method="GET">
+                                        <div class="select-list">
+                                            
+                                            <div class="select-list-item">
+                                                <p>Marque</p>
+                                                <input list = "marques"  name = "marque" id = "marque" required onchange ="myFunction()">
+                                                <datalist id="marques">
+                                                    
+                                                    <option value ="Dacia">
+                                                    <option value ="Renault">
+                                                    <option value ="Hyundai">
+                                                    <option value ="Peugeot">
+                                                    <option value ="Fiat">
+                                                    <option value ="Volkswagen">
+                                                    <option value ="Citroen">
+                                                    <option value ="Ford">
+                                                    <option value ="Toyota">
+                                                    <option value ="Nissan">
+                                                    <option value ="Mercedes-benz">
+                                                    <option value ="Bmw">
+                                                    <option value ="Audi">
+                                                    <option value ="Jeep"> 
+                                                    <option value ="Land-rover">  
+                                                    <option value ="Alfa romeo">  
+                                                    <option value ="Jaguar">  
+                                                    <option value ="Seat">  
+                                                    <option value ="Opel">  
+                                                    <option value ="Abarth">  
+                                                    <option value ="Byd">  
+                                                    <option value ="Chevrolet">  
+                                                    <option value ="Daewoo">  
+                                                    <option value ="Daihatsu">  
+                                                    <option value ="Dodge">  
+                                                    <option value ="Isuzu"> 
+                                                    <option value ="Honda">  
+                                                    <option value ="Lancia">  
+                                                    <option value ="Lexus">  
+                                                    <option value ="Mahindra">  
+                                                    <option value ="Mazda">  
+                                                    <option value ="Mitsubishi">  
+                                                    <option value ="Mini">  
+                                                    <option value ="Skoda"> 
+                                                    <option value ="Ssangyong">  
+                                                    <option value ="Subaru">  
+                                                    <option value ="Fuso">  
+                                                    <option value ="Gazelle">  
+                                                    <option value ="Hino">  
+                                                    <option value ="Iveco">  
+                                                    <option value ="Tata">  
+                                                    <option value ="Kaicene">                    
+                                                  </datalist>
+                                               
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Model</p>
+                                                <input list="models" name = "model" id = "model" required>
+                                                <datalist id = "models">
+                                                    
+                                                </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                                    <p>Carburant</p>
+                                                    <input list="carburant1" name = "carburant" id = "carburants1" >
+                                                    <datalist id = "carburant1">
+                                                        <option value ="Diesel">
+                                                            <option value ="Essence">
+                                                            <option value ="Electrique">
+                                                            <option value ="Hybride">
+                                                    </datalist>
+                                            
+                                            </div>
+                                            
+                                            <div class="select-list-item">
+                                                <p>Boite de vitesse</p>
+                                                <input list="bVitesse1" name = "bVitesse" id = "BVitesse1" >
+                                                <datalist id = "bVitesse1">
+                                                    <option value ="Manuelle">
+                                                    <option value ="Automatique">
+                                                        
+                                                </datalist>
+                                        
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Puissance fiscale min</p>
+                                                <input type="number" min="3" max="41" name = "pfmin" id = "pfmin" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Puissance fiscale max</p>
+                                                <input type="number" min="3" max="41" name = "pfmax" id = "pfmax" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+
+                                            <div class="select-list-item">
+                                                <p>Prix min</p>
+                                                <input type="number" min="20000" max="2799000" step="5000" name = "prixmin" id = "prixmin" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Prix max</p>
+                                                <input type="number" min="20000" max="2799000" step="5000" name = "prixmax" id = "prixmax" onchange = "minmaxFunction()" style="width:100%">
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                        <button type="submit" class="site-btn">Lancer la recherche</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                <div class="hero__tab__form">
+                                    <h2>voiture d'occasion</h2>
+                                    <form method="get" action="{% url 'pageNbr' 1 %}">
+                                        <div class="select-list" >
+                                            <div class="select-list-item">
+                                                <p>Marque</p>
+                                                <input list = "marqueslist"  name = "marque" id = "marqueid" onchange ="mySecondeFunction()">
+                                                <datalist id="marqueslist">
+                                                    
+                                                    <option value ="Dacia">
+                                                    <option value ="Renault">
+                                                    <option value ="Hyundai">
+                                                    <option value ="Peugeot">
+                                                    <option value ="Fiat">
+                                                    <option value ="Volkswagen">
+                                                    <option value ="Citroen">
+                                                    <option value ="Ford">
+                                                    <option value ="Toyota">
+                                                    <option value ="Nissan">
+                                                    <option value ="Mercedes-benz">
+                                                    <option value ="Bmw">
+                                                    <option value ="Audi">
+                                                    <option value ="Jeep"> 
+                                                    <option value ="Land-rover">  
+                                                    <option value ="Alfa romeo">  
+                                                    <option value ="Jaguar">  
+                                                    <option value ="Seat">  
+                                                    <option value ="Opel">  
+                                                    <option value ="Abarth">  
+                                                    <option value ="Byd">  
+                                                    <option value ="Chevrolet">  
+                                                    <option value ="Daewoo">  
+                                                    <option value ="Daihatsu">  
+                                                    <option value ="Dodge">  
+                                                    <option value ="Isuzu"> 
+                                                    <option value ="Honda">  
+                                                    <option value ="Lancia">  
+                                                    <option value ="Lexus">  
+                                                    <option value ="Mahindra">  
+                                                    <option value ="Mazda">  
+                                                    <option value ="Mitsubishi">  
+                                                    <option value ="Mini">  
+                                                    <option value ="Skoda"> 
+                                                    <option value ="Ssangyong">  
+                                                    <option value ="Subaru">  
+                                                    <option value ="Fuso">  
+                                                    <option value ="Gazelle">  
+                                                    <option value ="Hino">  
+                                                    <option value ="Iveco">  
+                                                    <option value ="Tata">  
+                                                    <option value ="Kaicene">                    
+                                                  </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Model</p>
+                                                <input list="modelsid" name = "model" id = "modelid" >
+                                                <datalist id = "modelsid">
+                                                    
+                                                </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Ville</p>
+                                                <input list="villes" name = "ville" id = "ville" >
+                                                <datalist id = "villes">
+                                                    <option value ="casablanca">
+                                                    <option value ="rabat">
+                                                    <option value ="agadir">
+                                                    <option value ="marrakech">
+                                                            
+                                                </datalist>
+                                                
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Carburant</p>
+                                                <input list="carburants" name = "carburant" id = "carburant" >
+                                                <datalist id = "carburants">
+
+                                                    <option value ="Diesel">
+                                                    <option value ="Essence">
+                                                    <option value ="Electrique">
+                                                    <option value ="LPG">
+                                                    <option value ="Hybride">
+                                                        
+                                                </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                            <p>Nombre de portes</p>
+                                                <input list="portes" name = "porte" id = "porte" >
+                                                <datalist id = "portes">
+
+                                                    <option value ="3 Portes">
+                                                    <option value ="5 Portes">
+                                                    
+                                                        
+                                                </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Boite de vitesse</p>
+                                                <input list="bVitesses" name = "bVitesse" id = "bVitesse" >
+                                                <datalist id = "bVitesses">
+
+                                                    <option value ="Automatique">
+                                                    <option value ="Manuelle">
+                                                    
+                                                        
+                                                </datalist>
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Kilometrage min</p>
+                                                <input type="number" min="10000" max="500000" name = "kmin" id = "kmin" step="10000" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Kilometrage max</p>
+                                                <input type="number" min="10000" max="500000" name = "kmax" id = "kmax" step="10000" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Puissance fiscale min</p>
+                                                <input type="number" min="4" max="14" name = "pfmin" id = "pfmin1" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Puissance fiscale max</p>
+                                                <input type="number" min="4" max="14" name = "pfmax" id = "pfmax1" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Date min</p>
+                                                <input type="number" min="1981" max="2022" name = "datemin" id ="datemin" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Date max</p>
+                                                <input type="number" min="1981" max="2022" value="2022" name = "datemax" id = "datemax" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Prix min</p>
+                                                <input type="number" min="5000" max="500000" step="5000" name = "prixmin" id = "prixmin1" onchange = "minmaxFunction()" style="width:100%">
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Prix max</p>
+                                                <input type="number" min="5000" max="500000" step="5000" name = "prixmax" id = "prixmax1" onchange="minmaxFunction()" style="width:100%">
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="car-price">
+                                                
+                                            <div class="price-range-wrap">
+                                                <div class="price-range"></div>
+                                                <div class="range-slider">
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- <div class="car-price">
+                                            <p>Price Range:</p>
+                                            <div class="price-range-wrap">
+                                                <div class="price-range"></div>
+                                                <div class="range-slider">
+                                                    <div class="price-input">
+                                                        <input type="text" id="amount">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> -->
+                            
+                                        <button type="submit" class="site-btn">Lancer la recherche</button>
+                                    </form>
+                                </div>
+                            </div>
+
+
+                            <div class="tab-pane" id="tabs-3" role="tabpanel">
+                                <div class="hero__tab__form">
+                                    <h2>Trouver une voiture</h2>
+                                    <form action="1/2/3/4/5/6/7/comparaison.html" method="GET">
+                                        <div class="select-list">
+                                            
+                                            <div class="select-list-item">
+                                                <p>Marque</p>
+                                                <input list = "marqueslist1"  name = "marque2" id = "marqueidaa" required onchange ="myThirdFunction()">
+                                                <datalist id="marqueslist1">
+                                                    
+                                                    <option value ="Dacia">
+                                                    <option value ="Renault">
+                                                    <option value ="Hyundai">
+                                                    <option value ="Peugeot">
+                                                    <option value ="Fiat">
+                                                    <option value ="Volkswagen">
+                                                    <option value ="Citroen">
+                                                    <option value ="Ford">
+                                                    <option value ="Toyota">
+                                                    <option value ="Nissan">
+                                                    <option value ="Mercedes-benz">
+                                                    <option value ="Bmw">
+                                                    <option value ="Audi">
+                                                    <option value ="Jeep"> 
+                                                    <option value ="Land-rover">  
+                                                    <option value ="Alfa romeo">  
+                                                    <option value ="Jaguar">  
+                                                    <option value ="Seat">  
+                                                    <option value ="Opel">  
+                                                    <option value ="Abarth">  
+                                                    <option value ="Byd">  
+                                                    <option value ="Chevrolet">  
+                                                    <option value ="Daewoo">  
+                                                    <option value ="Daihatsu">  
+                                                    <option value ="Dodge">  
+                                                    <option value ="Isuzu"> 
+                                                    <option value ="Honda">  
+                                                    <option value ="Lancia">  
+                                                    <option value ="Lexus">  
+                                                    <option value ="Mahindra">  
+                                                    <option value ="Mazda">  
+                                                    <option value ="Mitsubishi">  
+                                                    <option value ="Mini">  
+                                                    <option value ="Skoda"> 
+                                                    <option value ="Ssangyong">  
+                                                    <option value ="Subaru">  
+                                                    <option value ="Fuso">  
+                                                    <option value ="Gazelle">  
+                                                    <option value ="Hino">  
+                                                    <option value ="Iveco">  
+                                                    <option value ="Tata">  
+                                                    <option value ="Kaicene">                    
+                                                  </datalist>
+                                                <!-- <select id = "marque" class="form-select" size="3" aria-label="size 3 select example" >
+                                                    <option>Select Brand</option> 
+                                                    {% for i in names%}
+                                                    <option name = "marque">{{i}}</option>
+                                                    {% endfor %}
+                                                </select> -->
+                                            </div>
+                                            <div class="select-list-item">
+                                                <p>Model</p>
+                                                <input list="modelsid1" name = "model2" id = "modelidaa" required>
+                                                <datalist id = "modelsid1">
+                                                    
+                                                </datalist>
+                                            </div>
+                                            
+                                            <div class="select-list-item">
+                                                <p>Année</p>
+
+                                                <input type="number" min="1981" max="2022" name = "annee2" id ="datemin" onchange="minmaxFunction()" style="width:100%">
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                       
+                                        <button type="submit" class="site-btn">Effectuer une comparaison</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Services Section Begin -->
+    <section class="services spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <!-- <span>Marques de voitures neuves populaires</span> -->
+                        <h2> Marques de voitures neuves populaires</h2>
+                        <!-- <p>Marques de voitures neuves populaires</p> -->
+                    </div>
+                </div>
+            </div>
+            
+                <div class="row">
+                    
+                    {% for i in data%}
+                    
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="services__item">
+                            <img src="{{i.0}}" alt="">
+                            <h5>{{i.1}}</h5>
+                            <p>Découvrez les différentes models de {{i.2}}</p>
+                            <a href="{% url 'logospage' i.1 %}"><i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    {% endfor%}
+                    
+                    
+                </div>
+            
+                 
+                
+               
+                    
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Feature Section Begin -->
+    <!-- <section class="feature spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="feature__text">
+                        <div class="section-title">
+                            <span>Our Feature</span>
+                            <h2>We Are a Trusted Name In Auto</h2>
+                        </div>
+                        <div class="feature__text__desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo
+                                viverra maecenas accumsan lacus vel facilisis.</p>
+                        </div>
+                        <div class="feature__text__btn">
+                            <a href="#" class="primary-btn">About Us</a>
+                            <a href="#" class="primary-btn partner-btn">Our Partners</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 offset-lg-4">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src={% static "img/feature/feature-1.png" %} alt="">
+                                </div>
+                                <h6>Engine</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src= {% static "img/feature/feature-2.png" %} alt="">
+                                </div>
+                                <h6>Turbo</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src= {% static "img/feature/feature-3.png" %} alt="">
+                                </div>
+                                <h6>Colling</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src= {% static "img/feature/feature-4.png" %} alt="">
+                                </div>
+                                <h6>Suspension</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src={% static "img/feature/feature-5.png" %} alt="">
+                                </div>
+                                <h6>Electrical</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-4 col-6">
+                            <div class="feature__item">
+                                <div class="feature__item__icon">
+                                    <img src={% static "img/feature/feature-6.png"  %} alt="">
+                                </div>
+                                <h6>Brakes</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Feature Section End -->
+
+    <!-- Car Section Begin -->
+    <section class="car spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Car</span>
+                        <h2>Best Vehicle Offers</h2>
+                    </div>
+                    <ul class="filter__controls">
+                        <li class="active" data-filter="*">Most Researched</li>
+                        <li data-filter=".sale">Latest on sale</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row car-filter">
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src= {% static "img/cars/car-1.jpg" %} alt="">
+                            <img src= {% static "img/cars/car-8.jpg" %} alt="">
+                            <img src= {% static "img/cars/car-6.jpg" %} alt="">
+                            <img src= {% static "img/cars/car-3.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2016</div>
+                                <h5><a href="#">Porsche cayenne turbo s</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option">For Rent</span>
+                                <h6>$218<span>/Month</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sale">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-2.jpg" %} alt="">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-6.jpg" %} alt="">
+                            <img src={% static "img/cars/car-4.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2020</div>
+                                <h5><a href="#">Toyota camry asv50l-jeteku</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option sale">For Sale</span>
+                                <h6>$73,900</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-3.jpg" %} alt="">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-6.jpg" %} alt="">
+                            <img src={% static "img/cars/car-5.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2017</div>
+                                <h5><a href="#">Bmw s1000rr 2019 m</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option">For Rent</span>
+                                <h6>$299<span>/Month</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sale">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-4.jpg" %} alt="">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-2.jpg" %} alt="">
+                            <img src={% static "img/cars/car-1.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2019</div>
+                                <h5><a href="#">Lamborghini huracan evo</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option sale">For Sale</span>
+                                <h6>$120,000</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-5.jpg" %} alt="">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-7.jpg" %} alt="">
+                            <img src={% static "img/cars/car-2.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2018</div>
+                                <h5><a href="#">Audi q8 2020</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option">For Rent</span>
+                                <h6>$319<span>/Month</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix sale">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-6.jpg" %} alt="">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-3.jpg" %} alt="">
+                            <img src={% static "img/cars/car-1.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2016</div>
+                                <h5><a href="#">Mustang shelby gt500</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option sale">For Sale</span>
+                                <h6>$730,900</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-7.jpg" %} alt="">
+                            <img src={% static "img/cars/car-2.jpg" %} alt="">
+                            <img src={% static "img/cars/car-4.jpg" %} alt="">
+                            <img src={% static "img/cars/car-1.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2020</div>
+                                <h5><a href="#">Lamborghini aventador A90</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option">For Rent</span>
+                                <h6>$422<span>/Month</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 mix">
+                    <div class="car__item">
+                        <div class="car__item__pic__slider owl-carousel">
+                            <img src={% static "img/cars/car-8.jpg" %} alt="">
+                            <img src={% static "img/cars/car-3.jpg" %} alt="">
+                            <img src={% static "img/cars/car-5.jpg" %} alt="">
+                            <img src={% static "img/cars/car-2.jpg" %} alt="">
+                        </div>
+                        <div class="car__item__text">
+                            <div class="car__item__text__inner">
+                                <div class="label-date">2017</div>
+                                <h5><a href="#">Porsche cayenne turbo s</a></h5>
+                                <ul>
+                                    <li><span>35,000</span> mi</li>
+                                    <li>Auto</li>
+                                    <li><span>700</span> hp</li>
+                                </ul>
+                            </div>
+                            <div class="car__item__price">
+                                <span class="car-option">For Rent</span>
+                                <h6>$322<span>/Month</span></h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Car Section End -->
+
+    <!-- Chooseus Section Begin -->
+    <section class="chooseus spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="chooseus__text">
+                        <div class="section-title">
+                            <h2>Why People Choose Us</h2>
+                            <p>Duis aute irure dolorin reprehenderits volupta velit dolore fugiat nulla pariatur
+                                excepteur sint occaecat cupidatat.</p>
+                        </div>
+                        <ul>
+                            <li><i class="fa fa-check-circle"></i> Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.</li>
+                            <li><i class="fa fa-check-circle"></i> Integer et nisl et massa tempor ornare vel id orci.
+                            </li>
+                            <li><i class="fa fa-check-circle"></i> Nunc consectetur ligula vitae nisl placerat tempus.
+                            </li>
+                            <li><i class="fa fa-check-circle"></i> Curabitur quis ante vitae lacus varius pretium.</li>
+                        </ul>
+                        <a href="#" class="primary-btn">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chooseus__video set-bg">
+            <img src={% static "img/chooseus-video.png" %} alt="">
+            <a href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE"
+                class="play-btn video-popup"><i class="fa fa-play"></i></a>
+        </div>
+    </section>
+    <!-- Chooseus Section End -->
+
+    <!-- Latest Blog Section Begin -->
+    <section class="latest spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <span>Our Blog</span>
+                        <h2>Latest News Updates</h2>
+                        <p>Sign up for the latest Automobile Industry information and more. Duis aute<br /> irure
+                            dolorin reprehenderits volupta velit dolore fugiat.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest__blog__item">
+                        <div class="latest__blog__item__pic set-bg" data-setbg={% static "img/latest-blog/lb-1.jpg" %}>
+                            <ul>
+                                <li>By Polly Williams</li>
+                                <li>Dec 19, 2018</li>
+                                <li>Comment</li>
+                            </ul>
+                        </div>
+                        <div class="latest__blog__item__text">
+                            <h5>Benjamin Franklin S Method Of Habit Formation</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel
+                                facilisis.</p>
+                            <a href="#">View More <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest__blog__item">
+                        <div class="latest__blog__item__pic set-bg" data-setbg={% static  "img/latest-blog/lb-2.jpg" %}>
+                            <ul>
+                                <li>By Mattie Ramirez</li>
+                                <li>Dec 19, 2018</li>
+                                <li>Comment</li>
+                            </ul>
+                        </div>
+                        <div class="latest__blog__item__text">
+                            <h5>How To Set Intentions That Energize You</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel
+                                facilisis.</p>
+                            <a href="#">View More <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="latest__blog__item">
+                        <div class="latest__blog__item__pic set-bg" data-setbg={% static  "img/latest-blog/lb-3.jpg" %}>
+                            <ul>
+                                <li>By Nicholas Brewer</li>
+                                <li>Dec 19, 2018</li>
+                                <li>Comment</li>
+                            </ul>
+                        </div>
+                        <div class="latest__blog__item__text">
+                            <h5>Burning Desire Golden Key Or Red Herring</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Risus commodo viverra maecenas accumsan lacus vel
+                                facilisis.</p>
+                            <a href="#">View More <i class="fa fa-long-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Latest Blog Section End -->
+
+    <!-- Cta Begin -->
+    <div class="cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="cta__item set-bg" data-setbg={% static "img/cta/cta-1.jpg" %}>
+                        <h4>Do You Want To Buy A Car</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="cta__item set-bg" data-setbg={% static  "img/cta/cta-2.jpg" %}>
+                        <h4>Do You Want To Rent A Car</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cta End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg={% static "img/footer-bg.jpg" %}>
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> (+12) 345 678 910</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> Colorlib@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src={% static "img/footer-logo.png" %} alt=""></a>
+                        </div>
+                        <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us
+                            on (+1) 96 123 8888</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src={% static "js/jquery-3.3.1.min.js" %} ></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+    <script src={% static "js/jquery.nice-select.min.js" %}></script>
+    <script src={% static "js/jquery-ui.min.js" %}></script>
+    <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "js/mixitup.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
+</body>
+<script>
+    function myFunction(){
+        var marque = document.getElementById('marque');
+        // var models = document.getElementById('models').options[0];
+        var models = document.getElementById('models')
+        if (marque.value == "Dacia"){
+            models.innerHTML = "<Option value='Dokker'> <Option value='Dokker Van'> <Option value='Lodgy'> <Option value='Logan'> <Option value='Sandero'> <Option value='Sandero Stepway'> <Option value='Sandero Streetway'>"
+            }
+        else if (marque.value == "Audi"){
+            models.innerHTML = "<Option value='A1'> <Option value='A3'> <Option value='A4'> <Option value='A5'> <Option value='A6'> <Option value='A7'> <Option value='A8'> <Option value='Q2'> <Option value='Q3'> <Option value='Q5'> <Option value='Q7'> <Option value='Q8'> <Option value='S5'> <Option value='TT'> <Option value='e-tron'>"
+            }
+        else if (marque.value == "Bmw"){
+            models.innerHTML = "<Option value='M2'> <Option value='M3'> <Option value='Serie 1'> <Option value='Serie 2'> <Option value='Serie 2 Gran Coupe'> <Option value='Serie 2 Gran Tourer'> <Option value='Serie 3'> <Option value='Serie 4'> <Option value='Serie 5'> <Option value='Serie 6'> <Option value='Serie 7'> <Option value='Serie 8'> <Option value='Serie 6 Gran Turismo'> <Option value='X1'> <Option value='X2'> <Option value='X3'> <Option value='X4'> <Option value='X5'> <Option value='X6'> <Option value='X7'> <Option value='Z4'>"
+            }
+        else if (marque.value == "Jeep"){
+            models.innerHTML = "<Option value='Cherokee'> <Option value='Compass'> <Option value='Grand Cherokee'> <Option value='Renegade'> <Option value='Wrangler'> "
+            }
+        else if (marque.value == "Renault"){
+            models.innerHTML = "<Option value='Captur'> <Option value='Clio'> <Option value='Espace'> <Option value='Express'> <Option value='Express Van'> <Option value='Fluence'>  <Option value='Grd Scenic'> <Option value='Kadjar'> <Option value='Kangoo'> <Option value='Koleos'> <Option value='Laguna'> <Option value='Latitude'> <Option value='Master'> <Option value='Megane'> <Option value='Scenic'> <Option value='Symbol'> <Option value='Talisman'> <Option value='Trafic'> <Option value='Twingo'> <Option value='Twizy'> <option value ='Zoe'>"
+            }
+        else if (marque.value == "Hyundai"){
+            models.innerHTML = "<Option value='Accent'> <Option value='County'> <Option value='Creta'> <Option value='Elantra'> <Option value='Genesis'> <Option value='Grand i10'> <Option value='H1'> <Option value='H100'> <Option value='H350'> <Option value='HD35L'> <Option value='HD45'> <Option value='HD72'> <Option value='Ioniq'> <Option value='Kona'> <Option value='Santa Fe'> <Option value='Tucson'> <Option value='Veloster'> <Option value='i10'> <Option value='i20'> <Option value='i30'> <Option value='i40'> <option value ='iX35'> <option value ='iX55'>"
+            }
+        else if (marque.value == "Peugeot"){
+            models.innerHTML = "<Option value='107'> <Option value='108'> <Option value='2008'> <Option value='206'> <Option value='206 +'> <Option value='206 SW'> <Option value='206 Sedan'> <Option value='207'> <Option value='207 CC'> <Option value='207 SW'> <Option value='208'> <Option value='3008'> <Option value='301'> <Option value='307'> <Option value='307 CC'> <Option value='307 SW'> <Option value='308'> <Option value='308 CC'> <Option value='308 SW'> <Option value='4008'> <Option value='406'> <option value ='407'> <option value ='5008'> <option value ='508'> <option value ='508 RXH'> <option value ='508 SW'> <option value ='Bipper'> <option value ='Boxer'> <option value ='Expert'> <option value ='Landtrek'> <option value ='Partner'> <option value ='Pick Up'> <option value ='RCZ'> <option value ='Rifter'> <option value ='Traveller'>"
+            }
+        else if (marque.value == "Fiat"){
+            models.innerHTML = "<Option value='500'> <Option value='Bravo'> <Option value='Doblo'> <Option value='Doblo CCb'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Fiorino'> <Option value='Freemont'> <Option value='Fullback'> <Option value='Linea'> <Option value='Panda'> <Option value='Punto'> <Option value='Scudo'> <Option value='Stilo'> <Option value='Tipo'> <Option value='Uno'>"
+            }
+        else if (marque.value == "Volkswagen"){
+            models.innerHTML = "<Option value='Amarok'> <Option value='Arteon'> <Option value='Caddy'> <Option value='Caravelle'> <Option value='Coccinelle'> <Option value='Crafter'> <Option value='Eos'> <Option value='Golf'> <Option value='Jetta'> <Option value='Multivan'> <Option value='Passat'> <Option value='Polo'> <Option value='Scirocco'> <Option value='T-Roc'> <Option value='Tiguan'> <Option value='Touareg'> <Option value='Touran'>"
+            }
+        else if (marque.value == "Citroen"){
+            models.innerHTML = "<Option value='AMI'> <Option value='Berlingo'> <Option value='C-Crosser'> <Option value='C-Elysee'> <Option value='C1'> <Option value='C3'> <Option value='C3 Aircross'> <Option value='C3 Picasso'> <Option value='C4'> <Option value='C4 Aircross'> <Option value='C4 Picasso'> <Option value='C4 Spacetourer'> <Option value='C5'> <Option value='C5 Aircross'> <Option value='DS3'> <Option value='DS4'> <Option value='DS5'> <Option value='Grand C4 Picasso'> <Option value='Grand C4 Spacetourer'> <Option value='Jumper Fg'> <Option value='Nemo'> <option value ='SpaceTourer'> <option value ='Xsara'> <option value ='Xsara Picasso'> "
+            }
+        else if (marque.value == "Ford"){
+            models.innerHTML = "<Option value='B-MAX'> <Option value='C-MAX'> <Option value='Connect Fg'> <Option value='EcoSport'> <Option value='Everest'> <Option value='Fiesta'> <Option value='Fusion'> <Option value='Fusion Berline'> <Option value='Ka'> <Option value='Kuga'> <Option value='Mondero'> <Option value='Mustang'> <Option value='C5'> <Option value='Ranger'> <Option value='Tourneo Connect'> <Option value='Tourneo Custom'> <Option value='Transit'> <Option value='Transit Custom'> "
+            }
+        else if (marque.value == "Toyota"){
+            models.innerHTML = "<Option value='Auris'> <Option value='Avensis'> <Option value='Aygo'> <Option value='C-HR'> <Option value='Corolla'> <Option value='Fortuner'> <Option value='Hiace'> <Option value='Hilux'> <Option value='Land Cruiser'> <Option value='Prado'> <Option value='Prius'> <Option value='RAV4'> <Option value='Verso'> <Option value='Yaris'> <Option value='Yaris Cross'> "
+            }
+        else if (marque.value == "Nissan"){
+            models.innerHTML = "<Option value='350Z'> <Option value='Juke'> <Option value='Micra'> <Option value='NV 200 Evalia'> <Option value='Navara'> <Option value='Note'> <Option value='Qashqai'> <Option value='X-Trail'>"
+            }
+        else if (marque.value == "Mercedes-benz"){
+            models.innerHTML = "<Option value='AMG'> <Option value='Citan'> <Option value='Classe A'> <Option value='Classe B'> <Option value='Classe C'> <Option value='Classe CLA'> <Option value='Classe CLC'> <Option value='Classe CLS'> <Option value='Classe E'> <Option value='Classe G'> <Option value='Classe GLK'> <Option value='Classe M'> <Option value='Classe S'> <Option value='GL'> <Option value='GLA'> <Option value='GLC'> <Option value='GLE'> <Option value='GLS'> <Option value='SL'> <Option value='SLC'> <Option value='SLK'> <option value ='SLS'> <option value ='Sprinter'> <option value ='V'> <option value ='Vito'>"
+            }
+        else if (marque.value == "Land-rover"){
+            models.innerHTML = "<Option value='Defender'> <Option value='Discovery'> <Option value='Evoque'> <Option value='Freelander'> <Option value='Range Rover'> "
+            }
+        else if (marque.value == "Alfa romeo"){
+            models.innerHTML = "<Option value='147'> <Option value='159'> <Option value='4C'> <Option value='Brera'> <Option value='GT'> <Option value='Giulia'> <Option value='Giulietta'> <Option value='Mito'> <Option value='Spider'> <Option value='Stelvio'>"
+            }
+        else if (marque.value == "Jaguar"){
+            models.innerHTML = "<Option value='E-Pace'> <Option value='F-Pace'> <Option value='F-Type'> <Option value='XE'> <Option value='XF'> <Option value='XJ'> <Option value='XK'> "
+            }
+        else if (marque.value == "Seat"){
+            models.innerHTML = "<Option value='Altea'> <Option value='Arona'> <Option value='Ateca'> <Option value='Ibiza'> <Option value='Leon'> <Option value='Mii'> <Option value='Toledo'> "
+            }
+        else if (marque.value == "Opel"){
+            models.innerHTML = "<Option value='Adam'> <Option value='Astra'> <Option value='Combo'> <Option value='Corsa'> <Option value='Crossland'> <Option value='Crossland X'> <Option value='Insignia'> <Option value='Meriva'> <Option value='Mokka'> <Option value='Movano'> <Option value='Vivaro'> <Option value='Vivaro Combi'>"
+            }
+        else if (marque.value == "Chevrolet"){
+            models.innerHTML = "<Option value='Aveo'> <Option value='Captiva'> <Option value='Cruse'> <Option value='Optra'> <Option value='Orlando'> <Option value='Spark'>"
+            }
+        else if (marque.value == "Fuso"){
+            models.innerHTML = "<Option value='Canter'>"
+            }
+        else if (marque.value == "Byd"){
+            models.innerHTML = "<Option value='F0'>"
+            }
+        else if (marque.value == "Chery"){
+            models.innerHTML = "<Option value='A1'> <Option value='A5'> <Option value='QQ'> <Option value='QQ6'>"
+            }
+        else if (marque.value == "Dfsk"){
+            models.innerHTML = "<Option value='C31'> <Option value='C35'> <Option value='Glory 580'> <Option value='Ix5'> <Option value='K01'> <Option value='K01H'> <Option value='K01L'> <Option value='K01S'> <Option value='K05'> <Option value='K07'> <Option value='SERES 3'> <Option value='Super Cab'>"
+            }
+        else if (marque.value == "Daewoo"){
+            models.innerHTML = "<Option value='Korando'>"
+            }
+        else if (marque.value == "Daihatsu"){
+            models.innerHTML = "<Option value='Sirion'>"
+            }
+        else if (marque.value == "Dodge"){
+            models.innerHTML = "<Option value='Avenger'> <Option value='Caliber'>"
+            }
+        else if (marque.value == "Ds"){
+            models.innerHTML = "<Option value='DS 3'> <Option value='DS 3 Crossback'> <Option value='DS 4'> <Option value='DS 5'> <Option value='DS 7'>"
+            }
+        else if (marque.value == "Ferrari"){
+            models.innerHTML = "<Option value='360'>"
+            }
+        else if (marque.value == "Foton"){
+            models.innerHTML = "<Option value='TM'>"
+            }
+        else if (marque.value == "Gazelle"){
+            models.innerHTML = "<Option value='Next'> <Option value='Next Van'>"
+            }
+        else if (marque.value == "Hino"){
+            models.innerHTML = "<Option value='3t5'> <Option value='5t5'>"
+            }
+        else if (marque.value == "Honda"){
+            models.innerHTML = "<Option value='Accord'> <Option value='CR-V'> <Option value='Civic'> <Option value='HR-V'> <Option value='Insight'> <Option value='Jazz'>"
+            }
+        else if (marque.value == "Isuzu"){
+            models.innerHTML = "<Option value='D-Max'> <Option value='Serie N'>"
+            }
+        else if (marque.value == "Iveco"){
+            models.innerHTML = "<Option value='Daily'>"
+            }
+        else if (marque.value == "Kaicen"){
+            models.innerHTML = "<Option value='Star'>"
+            }
+        else if (marque.value == "Kia"){
+            models.innerHTML = "<Option value='Carens'> <Option value='Carnival'> <Option value='Cee'd'> <Option value='Ceed'> <Option value='Cerato'> <Option value='K2500'> <Option value='K2700'> <Option value='K5'> <Option value='Niro'> <Option value='Optima'> <Option value='Picanto'> <Option value='ProCeed'> <Option value='Quoris'> <Option value='Rio'> <Option value='Seltos'> <Option value='Sorento'> <Option value='Soul'> <Option value='Sportage'>  <Option value='Stinger'>"
+            }
+        else if (marque.value == "Lancia"){
+            models.innerHTML = "<Option value='Delta'> <Option value='Ypsilon'>"
+            }
+        else if (marque.value == "Lexus"){
+            models.innerHTML = "<Option value='ES'> <Option value='IS'> <Option value='LS'> <Option value='LX'> <Option value='NX'> <Option value='RX'> <Option value='UX'>"
+            }
+        else if (marque.value == "Mahindra"){
+            models.innerHTML = "<Option value='Genio'> <Option value='KUV 100'> <Option value='Scorpio'> <Option value='XUV 500'>"
+            }
+        else if (marque.value == "Maserati"){
+            models.innerHTML = "<Option value='Ghibli'> <Option value='GranCarbio'> <Option value='GranTurismo'> <Option value='Levante'> <Option value='Quattroporte'>"
+            }
+        else if (marque.value == "Mazda"){
+            models.innerHTML = "<Option value='CX-3'> <Option value='CX-5'> <Option value='CX-9'> <Option value='Série 3'> <Option value='Série 6'>"
+            }
+        else if (marque.value == "Mini"){
+            models.innerHTML = "<Option value='Clubman'> <Option value='Mini'> <Option value='Paceman'>"
+            }
+        else if (marque.value == "Mitsubishi"){
+            models.innerHTML = "<Option value='Colt'> <Option value='L200'> <Option value='Outlander'> <Option value='Pajero'>"
+            }
+        else if (marque.value == "Porsche"){
+            models.innerHTML = "<Option value='911'> <Option value='Boxster'> <Option value='Cayenne'> <Option value='Cayman'> <Option value='Macan'> <Option value='Panamera'>"
+            }
+        else if (marque.value == "Skoda"){
+            models.innerHTML = "<Option value='Fabia'> <Option value='Kamiq'> <Option value='karoq'> <Option value='Kodiaq'> <Option value='Octavia'> <Option value='Rapid'> <Option value='Scala'> <Option value='Superb'> <Option value='Yeti'>"
+            }
+        else if (marque.value == "SSANGYONG"){
+            models.innerHTML = "<Option value='Actyon'> <Option value='Korando'> <Option value='Kyron'> <Option value='Rexton'> <Option value='Stavic'> <Option value='Tivoli'>"
+            }
+        else if (marque.value == "Subaru"){
+            models.innerHTML = "<Option value='Impreza'> <Option value='Legacy'> <Option value='Tribeca'>"
+            }
+        else if (marque.value == "Suzuki"){
+            models.innerHTML = "<Option value='Baleno'> <Option value='Celerio'> <Option value='Ignis'> <Option value='Jimny'> <Option value='SX4'> <Option value='SX4 S-Cross'>"
+            }
+        else if (marque.value == "Tata"){
+            models.innerHTML = "<Option value='Super Ace'> <Option value='Xenom'>"
+            }
+        else if (marque.value == "Volvo"){
+            models.innerHTML = "<Option value='S60'> <Option value='S80'> <Option value='S90'> <Option value='V40'> <Option value='V40 Cross Country'> <Option value='V60'> <Option value='V90'> <Option value='XC'> <Option value='XC40'>" 
+            }
+        else if (marque.value == ""){
+            models.innerHTML = "<Option value='Vous devez choisir une marque'>";
+        }
+        
+    }
+
+
+    function mySecondeFunction(){
+        var marque = document.getElementById("marqueid");
+        var models = document.getElementById("modelsid");
+        if (marque.value == "Dacia"){
+            models.innerHTML = "<Option value='Dokker'> <Option value='Dokker Van'> <Option value='Lodgy'> <Option value='Logan'> <Option value='Sandero'> <Option value='Sandero Stepway'> <Option value='Sandero Streetway'>"
+            }
+        else if (marque.value == "Audi"){
+            models.innerHTML = "<Option value='A1'> <Option value='A3'> <Option value='A4'> <Option value='A5'> <Option value='A6'> <Option value='A7'> <Option value='A8'> <Option value='Q2'> <Option value='Q3'> <Option value='Q5'> <Option value='Q7'> <Option value='Q8'> <Option value='S5'> <Option value='TT'> <Option value='e-tron'>"
+            }
+        else if (marque.value == "Bmw"){
+            models.innerHTML = "<Option value='M2'> <Option value='M3'> <Option value='Serie 1'> <Option value='Serie 2'> <Option value='Serie 2 Gran Coupe'> <Option value='Serie 2 Gran Tourer'> <Option value='Serie 3'> <Option value='Serie 4'> <Option value='Serie 5'> <Option value='Serie 6'> <Option value='Serie 7'> <Option value='Serie 8'> <Option value='Serie 6 Gran Turismo'> <Option value='X1'> <Option value='X2'> <Option value='X3'> <Option value='X4'> <Option value='X5'> <Option value='X6'> <Option value='X7'> <Option value='Z4'>"
+            }
+        else if (marque.value == "Jeep"){
+            models.innerHTML = "<Option value='Cherokee'> <Option value='Compass'> <Option value='Grand Cherokee'> <Option value='Renegade'> <Option value='Wrangler'> "
+            }
+        else if (marque.value == "Renault"){
+            models.innerHTML = "<Option value='Captur'> <Option value='Clio'> <Option value='Espace'> <Option value='Express'> <Option value='Express Van'> <Option value='Fluence'>  <Option value='Grd Scenic'> <Option value='Kadjar'> <Option value='Kangoo'> <Option value='Koleos'> <Option value='Laguna'> <Option value='Latitude'> <Option value='Master'> <Option value='Megane'> <Option value='Scenic'> <Option value='Symbol'> <Option value='Talisman'> <Option value='Trafic'> <Option value='Twingo'> <Option value='Twizy'> <option value ='Zoe'>"
+            }
+        else if (marque.value == "Hyundai"){
+            models.innerHTML = "<Option value='Accent'> <Option value='County'> <Option value='Creta'> <Option value='Elantra'> <Option value='Genesis'> <Option value='Grand i10'> <Option value='H1'> <Option value='H100'> <Option value='H350'> <Option value='HD35L'> <Option value='HD45'> <Option value='HD72'> <Option value='Ioniq'> <Option value='Kona'> <Option value='Santa Fe'> <Option value='Tucson'> <Option value='Veloster'> <Option value='i10'> <Option value='i20'> <Option value='i30'> <Option value='i40'> <option value ='iX35'> <option value ='iX55'>"
+            }
+        else if (marque.value == "Peugeot"){
+            models.innerHTML = "<Option value='107'> <Option value='108'> <Option value='2008'> <Option value='206'> <Option value='206 +'> <Option value='206 SW'> <Option value='206 Sedan'> <Option value='207'> <Option value='207 CC'> <Option value='207 SW'> <Option value='208'> <Option value='3008'> <Option value='301'> <Option value='307'> <Option value='307 CC'> <Option value='307 SW'> <Option value='308'> <Option value='308 CC'> <Option value='308 SW'> <Option value='4008'> <Option value='406'> <option value ='407'> <option value ='5008'> <option value ='508'> <option value ='508 RXH'> <option value ='508 SW'> <option value ='Bipper'> <option value ='Boxer'> <option value ='Expert'> <option value ='Landtrek'> <option value ='Partner'> <option value ='Pick Up'> <option value ='RCZ'> <option value ='Rifter'> <option value ='Traveller'>"
+            }
+        else if (marque.value == "Fiat"){
+            models.innerHTML = "<Option value='500'> <Option value='Bravo'> <Option value='Doblo'> <Option value='Doblo CCb'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Fiorino'> <Option value='Freemont'> <Option value='Fullback'> <Option value='Linea'> <Option value='Panda'> <Option value='Punto'> <Option value='Scudo'> <Option value='Stilo'> <Option value='Tipo'> <Option value='Uno'>"
+            }
+        else if (marque.value == "Volkswagen"){
+            models.innerHTML = "<Option value='Amarok'> <Option value='Arteon'> <Option value='Caddy'> <Option value='Caravelle'> <Option value='Coccinelle'> <Option value='Crafter'> <Option value='Eos'> <Option value='Golf'> <Option value='Jetta'> <Option value='Multivan'> <Option value='Passat'> <Option value='Polo'> <Option value='Scirocco'> <Option value='T-Roc'> <Option value='Tiguan'> <Option value='Touareg'> <Option value='Touran'>"
+            }
+        else if (marque.value == "Citroen"){
+            models.innerHTML = "<Option value='AMI'> <Option value='Berlingo'> <Option value='C-Crosser'> <Option value='C-Elysee'> <Option value='C1'> <Option value='C3'> <Option value='C3 Aircross'> <Option value='C3 Picasso'> <Option value='C4'> <Option value='C4 Aircross'> <Option value='C4 Picasso'> <Option value='C4 Spacetourer'> <Option value='C5'> <Option value='C5 Aircross'> <Option value='DS3'> <Option value='DS4'> <Option value='DS5'> <Option value='Grand C4 Picasso'> <Option value='Grand C4 Spacetourer'> <Option value='Jumper Fg'> <Option value='Nemo'> <option value ='SpaceTourer'> <option value ='Xsara'> <option value ='Xsara Picasso'> "
+            }
+        else if (marque.value == "Ford"){
+            models.innerHTML = "<Option value='B-MAX'> <Option value='C-MAX'> <Option value='Connect Fg'> <Option value='EcoSport'> <Option value='Everest'> <Option value='Fiesta'> <Option value='Fusion'> <Option value='Fusion Berline'> <Option value='Ka'> <Option value='Kuga'> <Option value='Mondero'> <Option value='Mustang'> <Option value='C5'> <Option value='Ranger'> <Option value='Tourneo Connect'> <Option value='Tourneo Custom'> <Option value='Transit'> <Option value='Transit Custom'> "
+            }
+        else if (marque.value == "Toyota"){
+            models.innerHTML = "<Option value='Auris'> <Option value='Avensis'> <Option value='Aygo'> <Option value='C-HR'> <Option value='Corolla'> <Option value='Fortuner'> <Option value='Hiace'> <Option value='Hilux'> <Option value='Land Cruiser'> <Option value='Prado'> <Option value='Prius'> <Option value='RAV4'> <Option value='Verso'> <Option value='Yaris'> <Option value='Yaris Cross'> "
+            }
+        else if (marque.value == "Nissan"){
+            models.innerHTML = "<Option value='350Z'> <Option value='Juke'> <Option value='Micra'> <Option value='NV 200 Evalia'> <Option value='Navara'> <Option value='Note'> <Option value='Qashqai'> <Option value='X-Trail'>"
+            }
+        else if (marque.value == "Mercedes-benz"){
+            models.innerHTML = "<Option value='AMG'> <Option value='Citan'> <Option value='Classe A'> <Option value='Classe B'> <Option value='Classe C'> <Option value='Classe CLA'> <Option value='Classe CLC'> <Option value='Classe CLS'> <Option value='Classe E'> <Option value='Classe G'> <Option value='Classe GLK'> <Option value='Classe M'> <Option value='Classe S'> <Option value='GL'> <Option value='GLA'> <Option value='GLC'> <Option value='GLE'> <Option value='GLS'> <Option value='SL'> <Option value='SLC'> <Option value='SLK'> <option value ='SLS'> <option value ='Sprinter'> <option value ='V'> <option value ='Vito'>"
+            }
+        else if (marque.value == "Land-rover"){
+            models.innerHTML = "<Option value='Defender'> <Option value='Discovery'> <Option value='Evoque'> <Option value='Freelander'> <Option value='Range Rover'> "
+            }
+        else if (marque.value == "Alfa romeo"){
+            models.innerHTML = "<Option value='147'> <Option value='159'> <Option value='4C'> <Option value='Brera'> <Option value='GT'> <Option value='Giulia'> <Option value='Giulietta'> <Option value='Mito'> <Option value='Spider'> <Option value='Stelvio'>"
+            }
+        else if (marque.value == "Jaguar"){
+            models.innerHTML = "<Option value='E-Pace'> <Option value='F-Pace'> <Option value='F-Type'> <Option value='XE'> <Option value='XF'> <Option value='XJ'> <Option value='XK'> "
+            }
+        else if (marque.value == "Seat"){
+            models.innerHTML = "<Option value='Altea'> <Option value='Arona'> <Option value='Ateca'> <Option value='Ibiza'> <Option value='Leon'> <Option value='Mii'> <Option value='Toledo'> "
+            }
+        else if (marque.value == "Opel"){
+            models.innerHTML = "<Option value='Adam'> <Option value='Astra'> <Option value='Combo'> <Option value='Corsa'> <Option value='Crossland'> <Option value='Crossland X'> <Option value='Insignia'> <Option value='Meriva'> <Option value='Mokka'> <Option value='Movano'> <Option value='Vivaro'> <Option value='Vivaro Combi'>"
+            }
+        else if (marque.value == "Chevrolet"){
+            models.innerHTML = "<Option value='Aveo'> <Option value='Captiva'> <Option value='Cruse'> <Option value='Optra'> <Option value='Orlando'> <Option value='Spark'>"
+            }
+        else if (marque.value == "Fuso"){
+            models.innerHTML = "<Option value='Canter'>"
+            }
+        else if (marque.value == "Byd"){
+            models.innerHTML = "<Option value='F0'>"
+            }
+        else if (marque.value == "Chery"){
+            models.innerHTML = "<Option value='A1'> <Option value='A5'> <Option value='QQ'> <Option value='QQ6'>"
+            }
+        else if (marque.value == "Dfsk"){
+            models.innerHTML = "<Option value='C31'> <Option value='C35'> <Option value='Glory 580'> <Option value='Ix5'> <Option value='K01'> <Option value='K01H'> <Option value='K01L'> <Option value='K01S'> <Option value='K05'> <Option value='K07'> <Option value='SERES 3'> <Option value='Super Cab'>"
+            }
+        else if (marque.value == "Daewoo"){
+            models.innerHTML = "<Option value='Korando'>"
+            }
+        else if (marque.value == "Daihatsu"){
+            models.innerHTML = "<Option value='Sirion'>"
+            }
+        else if (marque.value == "Dodge"){
+            models.innerHTML = "<Option value='Avenger'> <Option value='Caliber'>"
+            }
+        else if (marque.value == "Ds"){
+            models.innerHTML = "<Option value='DS 3'> <Option value='DS 3 Crossback'> <Option value='DS 4'> <Option value='DS 5'> <Option value='DS 7'>"
+            }
+        else if (marque.value == "Ferrari"){
+            models.innerHTML = "<Option value='360'>"
+            }
+        else if (marque.value == "Foton"){
+            models.innerHTML = "<Option value='TM'>"
+            }
+        else if (marque.value == "Gazelle"){
+            models.innerHTML = "<Option value='Next'> <Option value='Next Van'>"
+            }
+        else if (marque.value == "Hino"){
+            models.innerHTML = "<Option value='3t5'> <Option value='5t5'>"
+            }
+        else if (marque.value == "Honda"){
+            models.innerHTML = "<Option value='Accord'> <Option value='CR-V'> <Option value='Civic'> <Option value='HR-V'> <Option value='Insight'> <Option value='Jazz'>"
+            }
+        else if (marque.value == "Isuzu"){
+            models.innerHTML = "<Option value='D-Max'> <Option value='Serie N'>"
+            }
+        else if (marque.value == "Iveco"){
+            models.innerHTML = "<Option value='Daily'>"
+            }
+        else if (marque.value == "Kaicen"){
+            models.innerHTML = "<Option value='Star'>"
+            }
+        else if (marque.value == "Kia"){
+            models.innerHTML = "<Option value='Carens'> <Option value='Carnival'> <Option value='Cee'd'> <Option value='Ceed'> <Option value='Cerato'> <Option value='K2500'> <Option value='K2700'> <Option value='K5'> <Option value='Niro'> <Option value='Optima'> <Option value='Picanto'> <Option value='ProCeed'> <Option value='Quoris'> <Option value='Rio'> <Option value='Seltos'> <Option value='Sorento'> <Option value='Soul'> <Option value='Sportage'>  <Option value='Stinger'>"
+            }
+        else if (marque.value == "Lancia"){
+            models.innerHTML = "<Option value='Delta'> <Option value='Ypsilon'>"
+            }
+        else if (marque.value == "Lexus"){
+            models.innerHTML = "<Option value='ES'> <Option value='IS'> <Option value='LS'> <Option value='LX'> <Option value='NX'> <Option value='RX'> <Option value='UX'>"
+            }
+        else if (marque.value == "Mahindra"){
+            models.innerHTML = "<Option value='Genio'> <Option value='KUV 100'> <Option value='Scorpio'> <Option value='XUV 500'>"
+            }
+        else if (marque.value == "Maserati"){
+            models.innerHTML = "<Option value='Ghibli'> <Option value='GranCarbio'> <Option value='GranTurismo'> <Option value='Levante'> <Option value='Quattroporte'>"
+            }
+        else if (marque.value == "Mazda"){
+            models.innerHTML = "<Option value='CX-3'> <Option value='CX-5'> <Option value='CX-9'> <Option value='Série 3'> <Option value='Série 6'>"
+            }
+        else if (marque.value == "Mini"){
+            models.innerHTML = "<Option value='Clubman'> <Option value='Mini'> <Option value='Paceman'>"
+            }
+        else if (marque.value == "Mitsubishi"){
+            models.innerHTML = "<Option value='Colt'> <Option value='L200'> <Option value='Outlander'> <Option value='Pajero'>"
+            }
+        else if (marque.value == "Porsche"){
+            models.innerHTML = "<Option value='911'> <Option value='Boxster'> <Option value='Cayenne'> <Option value='Cayman'> <Option value='Macan'> <Option value='Panamera'>"
+            }
+        else if (marque.value == "Skoda"){
+            models.innerHTML = "<Option value='Fabia'> <Option value='Kamiq'> <Option value='karoq'> <Option value='Kodiaq'> <Option value='Octavia'> <Option value='Rapid'> <Option value='Scala'> <Option value='Superb'> <Option value='Yeti'>"
+            }
+        else if (marque.value == "SSANGYONG"){
+            models.innerHTML = "<Option value='Actyon'> <Option value='Korando'> <Option value='Kyron'> <Option value='Rexton'> <Option value='Stavic'> <Option value='Tivoli'>"
+            }
+        else if (marque.value == "Subaru"){
+            models.innerHTML = "<Option value='Impreza'> <Option value='Legacy'> <Option value='Tribeca'>"
+            }
+        else if (marque.value == "Suzuki"){
+            models.innerHTML = "<Option value='Baleno'> <Option value='Celerio'> <Option value='Ignis'> <Option value='Jimny'> <Option value='SX4'> <Option value='SX4 S-Cross'>"
+            }
+        else if (marque.value == "Tata"){
+            models.innerHTML = "<Option value='Super Ace'> <Option value='Xenom'>"
+            }
+        else if (marque.value == "Volvo"){
+            models.innerHTML = "<Option value='S60'> <Option value='S80'> <Option value='S90'> <Option value='V40'> <Option value='V40 Cross Country'> <Option value='V60'> <Option value='V90'> <Option value='XC'> <Option value='XC40'>" 
+            }
+        else if (marque.value == ""){
+            models.innerHTML = "<Option value='Vous devez choisir une marque'>";
+        }
+        
+    }
+
+    function myThirdFunction(){
+        var marque = document.getElementById("marqueidaa");
+        var models = document.getElementById("modelsid1");
+        if (marque.value == "Dacia"){
+            models.innerHTML = "<Option value='Dokker'> <Option value='Dokker Van'> <Option value='Lodgy'> <Option value='Logan'> <Option value='Sandero'> <Option value='Sandero Stepway'> <Option value='Sandero Streetway'>"
+            }
+        else if (marque.value == "Audi"){
+            models.innerHTML = "<Option value='A1'> <Option value='A3'> <Option value='A4'> <Option value='A5'> <Option value='A6'> <Option value='A7'> <Option value='A8'> <Option value='Q2'> <Option value='Q3'> <Option value='Q5'> <Option value='Q7'> <Option value='Q8'> <Option value='S5'> <Option value='TT'> <Option value='e-tron'>"
+            }
+        else if (marque.value == "Bmw"){
+            models.innerHTML = "<Option value='M2'> <Option value='M3'> <Option value='Serie 1'> <Option value='Serie 2'> <Option value='Serie 2 Gran Coupe'> <Option value='Serie 2 Gran Tourer'> <Option value='Serie 3'> <Option value='Serie 4'> <Option value='Serie 5'> <Option value='Serie 6'> <Option value='Serie 7'> <Option value='Serie 8'> <Option value='Serie 6 Gran Turismo'> <Option value='X1'> <Option value='X2'> <Option value='X3'> <Option value='X4'> <Option value='X5'> <Option value='X6'> <Option value='X7'> <Option value='Z4'>"
+            }
+        else if (marque.value == "Jeep"){
+            models.innerHTML = "<Option value='Cherokee'> <Option value='Compass'> <Option value='Grand Cherokee'> <Option value='Renegade'> <Option value='Wrangler'> "
+            }
+        else if (marque.value == "Renault"){
+            models.innerHTML = "<Option value='Captur'> <Option value='Clio'> <Option value='Espace'> <Option value='Express'> <Option value='Express Van'> <Option value='Fluence'>  <Option value='Grd Scenic'> <Option value='Kadjar'> <Option value='Kangoo'> <Option value='Koleos'> <Option value='Laguna'> <Option value='Latitude'> <Option value='Master'> <Option value='Megane'> <Option value='Scenic'> <Option value='Symbol'> <Option value='Talisman'> <Option value='Trafic'> <Option value='Twingo'> <Option value='Twizy'> <option value ='Zoe'>"
+            }
+        else if (marque.value == "Hyundai"){
+            models.innerHTML = "<Option value='Accent'> <Option value='County'> <Option value='Creta'> <Option value='Elantra'> <Option value='Genesis'> <Option value='Grand i10'> <Option value='H1'> <Option value='H100'> <Option value='H350'> <Option value='HD35L'> <Option value='HD45'> <Option value='HD72'> <Option value='Ioniq'> <Option value='Kona'> <Option value='Santa Fe'> <Option value='Tucson'> <Option value='Veloster'> <Option value='i10'> <Option value='i20'> <Option value='i30'> <Option value='i40'> <option value ='iX35'> <option value ='iX55'>"
+            }
+        else if (marque.value == "Peugeot"){
+            models.innerHTML = "<Option value='107'> <Option value='108'> <Option value='2008'> <Option value='206'> <Option value='206 +'> <Option value='206 SW'> <Option value='206 Sedan'> <Option value='207'> <Option value='207 CC'> <Option value='207 SW'> <Option value='208'> <Option value='3008'> <Option value='301'> <Option value='307'> <Option value='307 CC'> <Option value='307 SW'> <Option value='308'> <Option value='308 CC'> <Option value='308 SW'> <Option value='4008'> <Option value='406'> <option value ='407'> <option value ='5008'> <option value ='508'> <option value ='508 RXH'> <option value ='508 SW'> <option value ='Bipper'> <option value ='Boxer'> <option value ='Expert'> <option value ='Landtrek'> <option value ='Partner'> <option value ='Pick Up'> <option value ='RCZ'> <option value ='Rifter'> <option value ='Traveller'>"
+            }
+        else if (marque.value == "Fiat"){
+            models.innerHTML = "<Option value='500'> <Option value='Bravo'> <Option value='Doblo'> <Option value='Doblo CCb'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Doblo Cargo'> <Option value='Ducato'> <Option value='Fiorino'> <Option value='Freemont'> <Option value='Fullback'> <Option value='Linea'> <Option value='Panda'> <Option value='Punto'> <Option value='Scudo'> <Option value='Stilo'> <Option value='Tipo'> <Option value='Uno'>"
+            }
+        else if (marque.value == "Volkswagen"){
+            models.innerHTML = "<Option value='Amarok'> <Option value='Arteon'> <Option value='Caddy'> <Option value='Caravelle'> <Option value='Coccinelle'> <Option value='Crafter'> <Option value='Eos'> <Option value='Golf'> <Option value='Jetta'> <Option value='Multivan'> <Option value='Passat'> <Option value='Polo'> <Option value='Scirocco'> <Option value='T-Roc'> <Option value='Tiguan'> <Option value='Touareg'> <Option value='Touran'>"
+            }
+        else if (marque.value == "Citroen"){
+            models.innerHTML = "<Option value='AMI'> <Option value='Berlingo'> <Option value='C-Crosser'> <Option value='C-Elysee'> <Option value='C1'> <Option value='C3'> <Option value='C3 Aircross'> <Option value='C3 Picasso'> <Option value='C4'> <Option value='C4 Aircross'> <Option value='C4 Picasso'> <Option value='C4 Spacetourer'> <Option value='C5'> <Option value='C5 Aircross'> <Option value='DS3'> <Option value='DS4'> <Option value='DS5'> <Option value='Grand C4 Picasso'> <Option value='Grand C4 Spacetourer'> <Option value='Jumper Fg'> <Option value='Nemo'> <option value ='SpaceTourer'> <option value ='Xsara'> <option value ='Xsara Picasso'> "
+            }
+        else if (marque.value == "Ford"){
+            models.innerHTML = "<Option value='B-MAX'> <Option value='C-MAX'> <Option value='Connect Fg'> <Option value='EcoSport'> <Option value='Everest'> <Option value='Fiesta'> <Option value='Fusion'> <Option value='Fusion Berline'> <Option value='Ka'> <Option value='Kuga'> <Option value='Mondero'> <Option value='Mustang'> <Option value='C5'> <Option value='Ranger'> <Option value='Tourneo Connect'> <Option value='Tourneo Custom'> <Option value='Transit'> <Option value='Transit Custom'> "
+            }
+        else if (marque.value == "Toyota"){
+            models.innerHTML = "<Option value='Auris'> <Option value='Avensis'> <Option value='Aygo'> <Option value='C-HR'> <Option value='Corolla'> <Option value='Fortuner'> <Option value='Hiace'> <Option value='Hilux'> <Option value='Land Cruiser'> <Option value='Prado'> <Option value='Prius'> <Option value='RAV4'> <Option value='Verso'> <Option value='Yaris'> <Option value='Yaris Cross'> "
+            }
+        else if (marque.value == "Nissan"){
+            models.innerHTML = "<Option value='350Z'> <Option value='Juke'> <Option value='Micra'> <Option value='NV 200 Evalia'> <Option value='Navara'> <Option value='Note'> <Option value='Qashqai'> <Option value='X-Trail'>"
+            }
+        else if (marque.value == "Mercedes-benz"){
+            models.innerHTML = "<Option value='AMG'> <Option value='Citan'> <Option value='Classe A'> <Option value='Classe B'> <Option value='Classe C'> <Option value='Classe CLA'> <Option value='Classe CLC'> <Option value='Classe CLS'> <Option value='Classe E'> <Option value='Classe G'> <Option value='Classe GLK'> <Option value='Classe M'> <Option value='Classe S'> <Option value='GL'> <Option value='GLA'> <Option value='GLC'> <Option value='GLE'> <Option value='GLS'> <Option value='SL'> <Option value='SLC'> <Option value='SLK'> <option value ='SLS'> <option value ='Sprinter'> <option value ='V'> <option value ='Vito'>"
+            }
+        else if (marque.value == "Land-rover"){
+            models.innerHTML = "<Option value='Defender'> <Option value='Discovery'> <Option value='Evoque'> <Option value='Freelander'> <Option value='Range Rover'> "
+            }
+        else if (marque.value == "Alfa romeo"){
+            models.innerHTML = "<Option value='147'> <Option value='159'> <Option value='4C'> <Option value='Brera'> <Option value='GT'> <Option value='Giulia'> <Option value='Giulietta'> <Option value='Mito'> <Option value='Spider'> <Option value='Stelvio'>"
+            }
+        else if (marque.value == "Jaguar"){
+            models.innerHTML = "<Option value='E-Pace'> <Option value='F-Pace'> <Option value='F-Type'> <Option value='XE'> <Option value='XF'> <Option value='XJ'> <Option value='XK'> "
+            }
+        else if (marque.value == "Seat"){
+            models.innerHTML = "<Option value='Altea'> <Option value='Arona'> <Option value='Ateca'> <Option value='Ibiza'> <Option value='Leon'> <Option value='Mii'> <Option value='Toledo'> "
+            }
+        else if (marque.value == "Opel"){
+            models.innerHTML = "<Option value='Adam'> <Option value='Astra'> <Option value='Combo'> <Option value='Corsa'> <Option value='Crossland'> <Option value='Crossland X'> <Option value='Insignia'> <Option value='Meriva'> <Option value='Mokka'> <Option value='Movano'> <Option value='Vivaro'> <Option value='Vivaro Combi'>"
+            }
+        else if (marque.value == "Chevrolet"){
+            models.innerHTML = "<Option value='Aveo'> <Option value='Captiva'> <Option value='Cruse'> <Option value='Optra'> <Option value='Orlando'> <Option value='Spark'>"
+            }
+        else if (marque.value == "Fuso"){
+            models.innerHTML = "<Option value='Canter'>"
+            }
+        else if (marque.value == "Byd"){
+            models.innerHTML = "<Option value='F0'>"
+            }
+        else if (marque.value == "Chery"){
+            models.innerHTML = "<Option value='A1'> <Option value='A5'> <Option value='QQ'> <Option value='QQ6'>"
+            }
+        else if (marque.value == "Dfsk"){
+            models.innerHTML = "<Option value='C31'> <Option value='C35'> <Option value='Glory 580'> <Option value='Ix5'> <Option value='K01'> <Option value='K01H'> <Option value='K01L'> <Option value='K01S'> <Option value='K05'> <Option value='K07'> <Option value='SERES 3'> <Option value='Super Cab'>"
+            }
+        else if (marque.value == "Daewoo"){
+            models.innerHTML = "<Option value='Korando'>"
+            }
+        else if (marque.value == "Daihatsu"){
+            models.innerHTML = "<Option value='Sirion'>"
+            }
+        else if (marque.value == "Dodge"){
+            models.innerHTML = "<Option value='Avenger'> <Option value='Caliber'>"
+            }
+        else if (marque.value == "Ds"){
+            models.innerHTML = "<Option value='DS 3'> <Option value='DS 3 Crossback'> <Option value='DS 4'> <Option value='DS 5'> <Option value='DS 7'>"
+            }
+        else if (marque.value == "Ferrari"){
+            models.innerHTML = "<Option value='360'>"
+            }
+        else if (marque.value == "Foton"){
+            models.innerHTML = "<Option value='TM'>"
+            }
+        else if (marque.value == "Gazelle"){
+            models.innerHTML = "<Option value='Next'> <Option value='Next Van'>"
+            }
+        else if (marque.value == "Hino"){
+            models.innerHTML = "<Option value='3t5'> <Option value='5t5'>"
+            }
+        else if (marque.value == "Honda"){
+            models.innerHTML = "<Option value='Accord'> <Option value='CR-V'> <Option value='Civic'> <Option value='HR-V'> <Option value='Insight'> <Option value='Jazz'>"
+            }
+        else if (marque.value == "Isuzu"){
+            models.innerHTML = "<Option value='D-Max'> <Option value='Serie N'>"
+            }
+        else if (marque.value == "Iveco"){
+            models.innerHTML = "<Option value='Daily'>"
+            }
+        else if (marque.value == "Kaicen"){
+            models.innerHTML = "<Option value='Star'>"
+            }
+        else if (marque.value == "Kia"){
+            models.innerHTML = "<Option value='Carens'> <Option value='Carnival'> <Option value='Cee'd'> <Option value='Ceed'> <Option value='Cerato'> <Option value='K2500'> <Option value='K2700'> <Option value='K5'> <Option value='Niro'> <Option value='Optima'> <Option value='Picanto'> <Option value='ProCeed'> <Option value='Quoris'> <Option value='Rio'> <Option value='Seltos'> <Option value='Sorento'> <Option value='Soul'> <Option value='Sportage'>  <Option value='Stinger'>"
+            }
+        else if (marque.value == "Lancia"){
+            models.innerHTML = "<Option value='Delta'> <Option value='Ypsilon'>"
+            }
+        else if (marque.value == "Lexus"){
+            models.innerHTML = "<Option value='ES'> <Option value='IS'> <Option value='LS'> <Option value='LX'> <Option value='NX'> <Option value='RX'> <Option value='UX'>"
+            }
+        else if (marque.value == "Mahindra"){
+            models.innerHTML = "<Option value='Genio'> <Option value='KUV 100'> <Option value='Scorpio'> <Option value='XUV 500'>"
+            }
+        else if (marque.value == "Maserati"){
+            models.innerHTML = "<Option value='Ghibli'> <Option value='GranCarbio'> <Option value='GranTurismo'> <Option value='Levante'> <Option value='Quattroporte'>"
+            }
+        else if (marque.value == "Mazda"){
+            models.innerHTML = "<Option value='CX-3'> <Option value='CX-5'> <Option value='CX-9'> <Option value='Série 3'> <Option value='Série 6'>"
+            }
+        else if (marque.value == "Mini"){
+            models.innerHTML = "<Option value='Clubman'> <Option value='Mini'> <Option value='Paceman'>"
+            }
+        else if (marque.value == "Mitsubishi"){
+            models.innerHTML = "<Option value='Colt'> <Option value='L200'> <Option value='Outlander'> <Option value='Pajero'>"
+            }
+        else if (marque.value == "Porsche"){
+            models.innerHTML = "<Option value='911'> <Option value='Boxster'> <Option value='Cayenne'> <Option value='Cayman'> <Option value='Macan'> <Option value='Panamera'>"
+            }
+        else if (marque.value == "Skoda"){
+            models.innerHTML = "<Option value='Fabia'> <Option value='Kamiq'> <Option value='karoq'> <Option value='Kodiaq'> <Option value='Octavia'> <Option value='Rapid'> <Option value='Scala'> <Option value='Superb'> <Option value='Yeti'>"
+            }
+        else if (marque.value == "SSANGYONG"){
+            models.innerHTML = "<Option value='Actyon'> <Option value='Korando'> <Option value='Kyron'> <Option value='Rexton'> <Option value='Stavic'> <Option value='Tivoli'>"
+            }
+        else if (marque.value == "Subaru"){
+            models.innerHTML = "<Option value='Impreza'> <Option value='Legacy'> <Option value='Tribeca'>"
+            }
+        else if (marque.value == "Suzuki"){
+            models.innerHTML = "<Option value='Baleno'> <Option value='Celerio'> <Option value='Ignis'> <Option value='Jimny'> <Option value='SX4'> <Option value='SX4 S-Cross'>"
+            }
+        else if (marque.value == "Tata"){
+            models.innerHTML = "<Option value='Super Ace'> <Option value='Xenom'>"
+            }
+        else if (marque.value == "Volvo"){
+            models.innerHTML = "<Option value='S60'> <Option value='S80'> <Option value='S90'> <Option value='V40'> <Option value='V40 Cross Country'> <Option value='V60'> <Option value='V90'> <Option value='XC'> <Option value='XC40'>" 
+            }
+        else if (marque.value == ""){
+            models.innerHTML = "<Option value='Vous devez choisir une marque'>";
+        }
+    }
+
+    function minmaxFunction(){
+        var pfmin = document.getElementById("pfmin");
+        var pfmax =document.getElementById("pfmax");
+        var prixmin = document.getElementById("prixmin");
+        var prixmax = document.getElementById("prixmax");
+        var kmin = document.getElementById("kmin");
+        var kmax = document.getElementById("kmax");
+        var pfmin = document.getElementById("pfmin1");
+        var pfmax =document.getElementById("pfmax1");
+        var prixmin1 = document.getElementById("prixmin1");
+        var prixmax1 = document.getElementById("prixmax1");
+        var datemin = document.getElementById("datemin");
+        var datemax = document.getElementById("datemax");
+
+        if (parseInt(pfmin.value) > parseInt(pfmax.value)){
+            pfmin.value = pfmax.value; 
+        }
+        if (parseInt(pfmin1.value) > parseInt(pfmax1.value)){
+            pfmin1.value = pfmax1.value; 
+        }
+        
+        
+        if (parseInt(prixmin.value) > parseInt(prixmax.value)){
+            prixmin.value = prixmax.value;
+        }
+        if (parseInt(prixmin1.value) > parseInt(prixmax1.value)){
+            prixmin1.value = prixmax1.value;
+        }
+        
+        if (parseInt(kmin.value) > parseInt(kmax.value)){
+            kmin.value = kmax.value;
+        }
+        if (parseInt(datemin.value) > parseInt(datemax.value)){
+            datemin.value = datemax.value;
+        }
+    }
+</script>
+
+</html>

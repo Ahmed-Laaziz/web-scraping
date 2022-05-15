@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HVAC | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/font-awesome.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/elegant-icons.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/nice-select.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/magnific-popup.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/jquery-ui.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/slicknav.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/style.css" %} type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="primary-btn">Add Car</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="index.html"><img src={% static "img/logo.png" %} alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>(+12) 345 678 910</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+12) 345 678 910</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="/index.html"><img src={% static "img/logo.png" %} alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li><a href="/index.html">Accueil</a></li>
+                                <li><a href="{% url 'marquepage' 'Dacia' %}">Neuf</a></li>
+                                <!-- <li><a href="#">Occasion</a></li> -->
+                                <li><a href="{% url 'blogpages' 1 %}">Occasion</a></li>
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="car-details.html">Car Details</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="#" class="primary-btn">Statistiques</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <div class="counter spad set-bg" data-setbg={% static "img/counter-bg.jpg" %}>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">84350</h2>
+                        <p>Annonces stockés</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">83932</h2>
+                        <strong></strong>
+                        <p>Annonces valides</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">61229</h2>
+                        <p>marques traitées</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="counter__item">
+                        <h2 class="counter-num">79050</h2>
+                        <p>villes traitées</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+
+    <!-- Breadcrumb Begin -->
+
+    <!-- About Us Section Begin -->
+    <section class="about spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title about-title">
+                        <h2>bienvenue dans l'espace des statistiques du marché automobile marocain pour l'année 2022</h2>
+                        <p> ici vous trouverez le classement des différentes marques des voitures les plus connues selon les annonces publiées récemment sur des sites de vente des voitures fiables ainsi que la répartition géographique de ces annonces </p>
+                    </div>
+                </div>
+            </div>
+      </section>
+
+    <!-- Testimonial Section End -->
+
+    <!-- Counter Begin -->
+
+<div >
+
+
+  <div id="myPlot" style="width:100%;max-width:1000px"></div>
+  <div id="myPlot1" style="width:100%;max-width:1000px"></div>
+</div>
+    <div class="clients spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title client-title">
+                        <span>sources</span>
+                        <h2>Nos sources</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="https://www.avito.ma/fr/maroc/v%C3%A9hicules-%C3%A0_vendre" class="client__item">
+                        <img src="https://www.avito.ma/sp/content/images/main-logo.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="https://www.moteur.ma/fr/voiture/" class="client__item">
+                        <img src="https://www.moteur.ma/media/images/logo/logo_morocco.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="https://autocaz.ma/home" class="client__item">
+                        <img src="https://www.moteur.ma/media/images/campaigns/rubriques/autocaz--282448.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="https://www.avito.ma/auto/neuf/" class="client__item">
+                        <img src="data:image/png;base64,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" alt="">
+                    </a>
+                </div>
+                <!-- <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-2.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-4.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-5.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-6.png" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <a href="#" class="client__item">
+                        <img src="img/clients/client-7.png" alt="">
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- Clients End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg={% static "img/footer-bg.jpg" %}>
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> (+12) 345 678 910</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> Colorlib@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src={% static "img/footer-logo.png" %} alt=""></a>
+                        </div>
+                        <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us
+                            on (+1) 96 123 8888</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src={% static "js/jquery-3.3.1.min.js" %} ></script>
+    <script src={% static "js/bootstrap.min.js" %}></script>
+    <script src={% static "js/jquery.nice-select.min.js" %}></script>
+    <script src={% static "js/jquery-ui.min.js" %}></script>
+    <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "js/mixitup.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script>
+    var xArray = ["AUDI", "BMW", "CITROEN", "DACIA", "FIAT", "FORD", "HYUNDAI", "JEEP", "MERCEDES", "MG", "PEUGEOT", "PORSCHE", "RENAULT", "ROVER", "SKODA", "TOYOTA", "VOLKSWAGEN", "Autre"];
+    var yArray = [4856, 3131, 2113, 4665, 2198, 4799, 3473, 1855, 7424, 2190, 4103, 1036, 4022, 3893, 1811, 2176, 6649, 835];
+
+    var layout = {title:"Le nombre des annonces par marques"};
+
+    var data = [{labels:xArray, values:yArray, type:"pie"}];
+
+    Plotly.newPlot("myPlot", data, layout);
+    </script>
+    <script>
+    var xArray = ["AGADIR", "ALHOCEIMA", "BERKANE", "BERRCHID", "BOUZNIKA", "CASABLANCA", "El JADIDA", "ERRACHIDIA", "ESSAOUIRA", "FES", "KENITRA", "KHEMISSET", "KHENIFRA", "KHOURIBGA", "MARRAKECH", "MEKNES","OUJDA", "RABAT", "SALE", "TANGER", "TETOUAN"];
+    var yArray = [5406, 82, 93, 852, 199, 30683, 4143, 238, 149, 6444, 1620, 230, 62, 306, 4060, 1408, 2995, 11666, 2326, 4562, 1608];
+
+
+    var layout = {title:"Le nombre des annonces par villes"};
+
+    var data = [{labels:xArray, values:yArray, hole:.4, type:"pie"}];
+
+    Plotly.newPlot("myPlot1", data, layout);
+    </script>
+</body>
+
+</html>

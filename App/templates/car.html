@@ -1,0 +1,480 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="HVAC Template">
+    <meta name="keywords" content="HVAC, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HVAC | Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href={% static "css/bootstrap.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/font-awesome.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/elegant-icons.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/nice-select.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/magnific-popup.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/jquery-ui.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/owl.carousel.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/slicknav.min.css" %} type="text/css">
+    <link rel="stylesheet" href={% static "css/style.css" %} type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Offcanvas Menu Begin -->
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="offcanvas__widget">
+            <a href="#"><i class="fa fa-cart-plus"></i></a>
+            <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+            <a href="#" class="primary-btn">Add Car</a>
+        </div>
+        <div class="offcanvas__logo">
+            <a href="./index.html"><img src={% static "img/logo.png" %} alt=""></a>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+        <ul class="offcanvas__widget__add">
+            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+        </ul>
+        <div class="offcanvas__phone__num">
+            <i class="fa fa-phone"></i>
+            <span>(+12) 345 678 910</span>
+        </div>
+        <div class="offcanvas__social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-google"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <!-- Offcanvas Menu End -->
+
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <ul class="header__top__widget">
+                            <li><i class="fa fa-clock-o"></i> Week day: 08:00 am to 18:00 pm</li>
+                            <li><i class="fa fa-envelope-o"></i> Info.colorlib@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="header__top__right">
+                            <div class="header__top__phone">
+                                <i class="fa fa-phone"></i>
+                                <span>(+12) 345 678 910</span>
+                            </div>
+                            <div class="header__top__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-google"></i></a>
+                                <a href="#"><i class="fa fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header__logo">
+                        <a href="./index.html"><img src={% static "img/logo.png" %} alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="header__nav">
+                        <nav class="header__menu">
+                            <ul>
+                                <li class="active"><a href="/index.html">Accueil</a></li>
+                                <li><a href="{% url 'marquepage' 'Dacia' %}">Neuf</a></li>
+                                <!-- <li><a href="#">Occasion</a></li> -->
+                                <li><a href="{% url 'blogpages' 1 %}">Occasion</a></li>
+                                <!-- <li><a href="#">Pages</a>
+                                    <ul class="dropdown">
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="car-details.html">Car Details</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li> -->
+                                <!-- <li><a href="about.html">About</a></li>
+                                <li><a href="contact.html">Contact</a></li> -->
+                            </ul>
+                        </nav>
+                        <div class="header__nav__widget">
+                            <div class="header__nav__widget__btn">
+                                <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                <a href="#" class="search-switch"><i class="fa fa-search"></i></a>
+                            </div>
+                            <a href="/1/2/3/4/5/statistics.html" class="primary-btn">Statistiques</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="canvas__open">
+                <span class="fa fa-bars"></span>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb End -->
+    <div class="breadcrumb-option set-bg" data-setbg={% static "img/breadcrumb-bg.jpg" %}>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="breadcrumb__text">
+                        <h2>Les voitures neuves</h2>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html"><i class="fa fa-home"></i> Accueil</a>
+                            <span>About</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Breadcrumb Begin -->
+
+    <!-- Car Section Begin -->
+    <section class="car spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="car__sidebar">
+                        <div class="car__filter">
+                            <h5>Comparaison</h5>
+                            <form action="/1/2/3/4/5/6/7/comparaison.html" method="get">
+                                <select name="marque2">
+                                    <option data-display="Marque">Marque</option>
+                                    <option value="Dacia">Dacia</option>
+                                </select>
+                                <select name = model2>
+                                    <option data-display="Modèle">Modèle</option>
+                                    <option value="Logan">Logan</option>
+                                    <option value="Dokker">Dokker</option>
+                                    <option value="Dokker van">Dokker van</option>
+                                </select>
+                                <select name="annee2">
+                                    <option data-display="Année"></option>
+                                    <option value="2022">2022</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2020">2020</option>
+                                    <option value="2019">2019</option>
+                                    <option value="2018">2018</option>
+                                    <option value="2017">2017</option>
+                                    <option value="2016">2016</option>
+                                    <option value="2015">2015</option>
+                                    <option value="2014">2014</option>
+                                    <option value="2013">2013</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                    <option value="2010">2010</option>
+                                </select>
+                                <div class="car__filter__btn">
+                                    <button type="submit" class="site-btn">Rechercher</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div>
+                            <p></p>
+                            <p></p>
+                        </div>
+                        <div class="car__filter">
+                            <h5>Trouver une voiture</h5>
+                            <form action="/saisie.html">
+                                <select name="marque">
+                                    <option data-display="Marque">Marque</option>
+                                    <option value="Dacia">Dacia</option>
+                                </select>
+                                <select name = model>
+                                    <option data-display="Modèle">Modèle</option>
+                                    <option value="Logan">Logan</option>
+                                    <option value="Dokker">Dokker</option>
+                                    <option value="Dokker van">Dokker van</option>
+                                </select>
+                                <select name = "carburant">
+                                    <option data-display="Carburant"></option>
+                                    <option value="Diesel">Diesel</option>
+                                    <option value="ESSENCE">ESSENCE</option>
+                                    <option value="Electrique">Electrique</option>
+                                </select>
+                                <select name="bVitesse">
+                                    <option data-display="Boite de vitesse"></option>
+                                    <option value="Manuelle">Manuelle</option>
+                                    <option value="Automatique">Automatique</option>
+                                    
+                                </select>
+                                <select name="pfmin">
+                                    <option data-display="Puissance fiscale min"></option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="23">23</option>
+                                    <option value="26">26</option>
+                                    <option value="29">29</option>
+                                    <option value="32">32</option>
+                                </select>
+                                <select name="pfmax">
+                                    <option data-display="Puissance fiscale max"></option>
+                                    <option value="3">3</option>
+                                    <option value="6">6</option>
+                                    <option value="9">9</option>
+                                    <option value="12">12</option>
+                                    <option value="15">15</option>
+                                    <option value="18">18</option>
+                                    <option value="21">21</option>
+                                    <option value="23">23</option>
+                                    <option value="26">26</option>
+                                    <option value="29">29</option>
+                                    <option value="32">32</option>
+                                </select>
+                                <select name="prixmin">
+                                    <option data-display="Prix min"></option>
+                                    <option value="20000">20000</option>
+                                    <option value="40000">40000</option>
+                                    <option value="60000">60000</option>
+                                    <option value="80000">80000</option>
+                                    <option value="100000">100000</option>
+                                    <option value="110000">110000</option>
+                                    <option value="120000">120000</option>
+                                    <option value="130000">130000</option>
+                                    <option value="140000">140000</option>
+                                    <option value="150000">150000</option>
+                                    <option value="160000">160000</option>
+                                </select>
+                                <select name="prixmax">
+                                    <option data-display="Prix max"></option>
+                                    <option value="20000">20000</option>
+                                    <option value="40000">40000</option>
+                                    <option value="60000">60000</option>
+                                    <option value="80000">80000</option>
+                                    <option value="100000">100000</option>
+                                    <option value="110000">110000</option>
+                                    <option value="120000">120000</option>
+                                    <option value="130000">130000</option>
+                                    <option value="140000">140000</option>
+                                    <option value="150000">150000</option>
+                                    <option value="160000">160000</option>
+                                </select>
+                                <!-- <div class="filter-price">
+                                    <p>Price:</p>
+                                    <div class="price-range-wrap">
+                                        <div class="filter-price-range"></div>
+                                        <div class="range-slider">
+                                            <div class="price-input">
+                                                <input type="text" id="filterAmount">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="car__filter__btn">
+                                    <button type="submit" class="site-btn">Rechercher</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="car__filter__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="car__filter__option__item">
+                                    <h6>annonces</h6>
+                                    <select>
+                                        <option value="">9 voitures</option>
+                                        <option value="">15 voitures</option>
+                                        <option value="">20 voitures</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="car__filter__option__item car__filter__option__item--right">
+                                    <h6>Trié par</h6>
+                                    <select>
+                                        <option value="">Prix: le plus bas</option>
+                                        <option value="">Prix: le plus haut</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        {% for i in myList%}
+                        
+                       
+                        <div class="col-lg-6 col-md-6" style="margin-bottom: 60px;">
+                            <div class="car__item">
+                                <div class="car__item__pic__slider owl-carousel">
+                                    <a href="{% url 'marquesLinks' i.4 %}">
+                                    <img src= "{{i.2}}" alt="">
+                                    </a>
+                                </div>
+                                <div class="car__item__text">
+                                    <div class="car__item__text__inner">
+                                        <div class="label-date">{{annee}}</div>
+                                        <h5><a href="#">{{i.1}}</a></h5>
+                                        <ul>
+                                            <li><span>{{i.3.1}}</span></li>
+                                            <li>{{i.3.0}}</li>
+                                            <li><span>{{i.3.2}}</span> </li>
+                                        </ul>
+                                    </div>
+                                    <div class="car__item__price">
+                                        
+                                            <span class="car-option">{{i.0}}</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                      
+                        {% endfor %}
+                    </div>
+                    <div class="pagination__option">
+                        <a href="{% url 'marquepage' 'Dacia' %}"  class="active" >1</a>
+                        <a href="{% url 'marquepage' 'Audi' %}"  class="active" >2</a>
+                        <a href="{% url 'marquepage' 'BMW' %}"  class="active" >3</a>
+                        <a href="{% url 'marquepage' 'Fiat' %}"  class="active" >4</a>
+                        <a href="{% url 'marquepage' 'Ford' %}"  class="active" >5</a>
+                        <a href="{% url 'marquepage' 'Hyundai' %}"  class="active" >6</a>
+                        <a href="{% url 'marquepage' 'Isuzu' %}"  class="active" >7</a>
+                        <a href="{% url 'marquepage' 'Jeep' %}"  class="active" >8</a>
+                        <a href="{% url 'marquepage' 'Ferrari' %}" class="active" >9</a>
+                        <a href="{% url 'marquepage' 'Nissan' %}" class="active" >10</a>
+                        <a href="#"><span class="arrow_carrot-2right"></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Car Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer set-bg" data-setbg={% static "img/footer-bg.jpg" %}>
+        <div class="container">
+            <div class="footer__contact">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__title">
+                            <h2>Contact Us Now!</h2>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer__contact__option">
+                            <div class="option__item"><i class="fa fa-phone"></i> (+12) 345 678 910</div>
+                            <div class="option__item email"><i class="fa fa-envelope-o"></i> Colorlib@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer__about">
+                        <div class="footer__logo">
+                            <a href="#"><img src={% static "img/footer-logo.png" %} alt=""></a>
+                        </div>
+                        <p>Any questions? Let us know in store at 625 Gloria Union, California, United Stated or call us
+                            on (+1) 96 123 8888</p>
+                        <div class="footer__social">
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google"></i></a>
+                            <a href="#" class="skype"><i class="fa fa-skype"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 offset-lg-1 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Purchase</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Payemnt</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Shipping</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Return</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <div class="footer__widget">
+                        <h5>Infomation</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Hatchback</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Sedan</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> SUV</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Crossover</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer__brand">
+                        <h5>Top Brand</h5>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Abarth</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Acura</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Alfa Romeo</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Audi</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> BMW</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Chevrolet</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Ferrari</a></li>
+                            <li><a href="#"><i class="fa fa-angle-right"></i> Honda</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            <div class="footer__copyright__text">
+                <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
+        </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src={% static "js/jquery-3.3.1.min.js" %}></script>
+    <script src={% static "js/bootstrap.min.js" %} ></script>
+    <script src={% static "js/jquery.nice-select.min.js" %} ></script>
+    <script src={% static "js/jquery-ui.min.js" %}></script>
+    <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
+    <script src={% static "js/mixitup.min.js" %}></script>
+    <script src={% static "js/jquery.slicknav.js" %}></script>
+    <script src={% static "js/owl.carousel.min.js" %}></script>
+    <script src={% static "js/main.js" %}></script>
+</body>
+
+</html>
