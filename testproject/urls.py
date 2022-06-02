@@ -21,28 +21,13 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name = "index"),
     path('index.html', views.index, name = "index"),
-    path('saisie.html', views.saisie, name = "saisie"),
-    path('<marquepage>', views.car, name = "marquepage"),  
+    
     
     
     path('about.html', views.about, name = "about"),
     
     
-    path('<str:logospage>', views.logos, name = "logospage"),
-    path('contact.html', views.contact, name = "contact"),
-    path('main.html', views.main, name = "main"),
-    path('/<marquesLinks>', views.car_details, name = "marquesLinks"),
-    path('a/<recpage>', views.rec, name = "recpage"),
-
-    path('/page/<blogpages>', views.blog, name = "blogpages"),
-    path('details/page/<blogDetails>', views.blog_details, name = "blogDetails"),
-
-    path('/1/2/3/<pageNbr>', views.saisieOccasion, name = "pageNbr"),
-    path('1/2/3/4/<detailsLink>', views.occasion_details, name = "detailsLink"),
-
-    path('1/2/3/4/5/statistics.html', views.statistics, name = "statistics"),
-    path('1/2/3/4/5/6/<linkPage>', views.paginationOccasion, name="linkPage"),
-
+    
     path('1/2/3/4/5/6/7/comparaison.html', views.comparaison, name = "comparaison"),
     
 ]
