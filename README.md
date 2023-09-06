@@ -6,4 +6,5 @@ Ce projet nécessite l'installation des bibliothèques :
 - bs4 ==> pip install bs4
 
 Si vous avez rencontré des problèmes contacter moi sur : laazizahmed72@gmail.com
-lien d'une video démonstrative : https://youtu.be/eHRp5GnK760
+## lien d'une video démonstrative:
+<a href = "https://youtu.be/eHRp5GnK760">video démonstrative</a>
